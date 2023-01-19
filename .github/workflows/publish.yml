@@ -23,5 +23,5 @@ jobs:
           
       - name: Run cdnify script
         run: |
-          npm config ls -l
+          npm config ls
           node scripts/cdnify.mjs
