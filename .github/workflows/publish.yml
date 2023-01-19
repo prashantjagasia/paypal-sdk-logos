@@ -23,5 +23,5 @@ jobs:
           
       - name: Run cdnify script
         run: |
-          npm config ls
+          npm config set registry: "https://npm.paypal.com"
           node scripts/cdnify.mjs
