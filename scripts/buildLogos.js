@@ -48,6 +48,7 @@ async function buildLogos() {
   if (shouldCommit) {
     await $`git add .`;
     await $`git commit -am "feat: adding ${outdir}"`;
+    await $`git push`;
   }
 }
 
