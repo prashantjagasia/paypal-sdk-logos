@@ -47,7 +47,7 @@ async function buildLogos() {
 
   if (shouldCommit) {
     await $`git add cdn`;
-    await $`git commit -am "feat: generate CDN package"`;
+    await $`git commit -am "feat: generate CDN packages"`;
     await $`git push`;
   }
 }
