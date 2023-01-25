@@ -21,8 +21,8 @@ jobs:
         with:
           useLockFile: false
           
-      - name: Run cdnify script
+      - name: Run buildLogos script
         run: |
           npm config set registry: "https://npm.paypal.com"
           npm config ls
-          node scripts/cdnify.mjs
+          COMMIT=commit npm run build-logos
