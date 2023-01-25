@@ -46,7 +46,7 @@ async function buildLogos() {
   await Promise.all(logoPromises);
 
   if (shouldCommit) {
-    await $`git add .`;
+    await $`git add cdn`;
     await $`git commit -am "feat: adding ${outdir}"`;
     await $`git push`;
   }
