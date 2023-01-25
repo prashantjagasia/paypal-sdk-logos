@@ -14,7 +14,7 @@ async function buildLogos() {
 
   let shouldCommit;
   process.argv[2] &&
-    (shouldCommit = process.argv[2].replace(/\s+/g, "") === "commit");
+    (shouldCommit = process.argv[2].replace(/\s+/g, "") === "--commit");
 
   console.log("$$: ", process.argv[2], shouldCommit, typeof shouldCommit);
 
