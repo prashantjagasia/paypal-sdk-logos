@@ -16,8 +16,6 @@ async function buildLogos() {
   process.argv[2] &&
     (shouldCommit = process.argv[2].replace(/\s+/g, "") === "--commit");
 
-  console.log("$$: ", process.argv);
-
   if (!version) {
     throw new Error(`Package version required`);
   }
