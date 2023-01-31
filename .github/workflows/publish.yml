@@ -28,4 +28,4 @@ jobs:
           
       - name: Run buildLogos script
         run: |
-          npm run build-logos -- --commit
+          npx @paypalcorp/web status 82cb5b3c78100
