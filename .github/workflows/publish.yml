@@ -29,3 +29,6 @@ jobs:
       - name: Run buildLogos script
         run: |
           npx @paypalcorp/web status 82cb5b3c78100
+        with:
+          node-version: "16"
+          registry-url: "https://npm.paypal.com"
